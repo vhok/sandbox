@@ -95,7 +95,8 @@ app.get('/groups/:id', (req, res) => {
     const selectedGroup = groups.filter((group) => {
         return parseInt(id) === parseInt(group.id);
     });
-    res.json({
+
+    res.json({ 
         ...selectedGroup
     });
 });

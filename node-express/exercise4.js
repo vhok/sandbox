@@ -17,6 +17,7 @@ app.use(express.json()); // <--- middleware - can be added to route or whole app
 
 // ========================= VERY COMMON PATTERN =======================
 // 4. Add route handlers - Can define route handlers inside of a router, and take the router and plug it into our application.
+
 router.route('/') // Define the starting path of router
     .get((req, res) => {
 

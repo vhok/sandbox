@@ -4,9 +4,8 @@ interface Props {
     render: React.ReactNode
 }
 
-const Page = ({render: element} : Props) => {
-
-    return <>
+const Page = ({render: element} : Props) => 
+    <>
         <h1>Examples</h1>
         <nav>
             <ul>
@@ -16,6 +15,5 @@ const Page = ({render: element} : Props) => {
         </nav>
         {element}
     </>
-}
 
 export default Page

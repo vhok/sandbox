@@ -2,7 +2,6 @@ import React from 'react';
 import { 
   createBrowserRouter, 
   RouterProvider, 
-  Link,
 } from 'react-router-dom'
 import './App.css';
 import Context from './pages/Context';
@@ -18,8 +17,6 @@ const router = createBrowserRouter([
     element: <Page render={<Context/>} />,
   }
 ]);
-
-
 
 function App() {
   return (

@@ -2,20 +2,30 @@ import React from 'react';
 import { 
   createBrowserRouter, 
   RouterProvider, 
-  Route 
+  Link,
 } from 'react-router-dom'
 import './App.css';
+import Context from './pages/Context';
+import Page from './components/Page'
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <h1>Test</h1>,
+    element: <Page render={<h1>Test</h1>} />,
   },
+  {
+    path: "/context",
+    element: <Page render={<Context/>} />,
+  }
 ]);
+
+
 
 function App() {
   return (
-    <RouterProvider router={router} />
+    <div>
+      <RouterProvider router={router} />
+    </div>
   );
 }
 
